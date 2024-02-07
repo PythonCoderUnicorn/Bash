@@ -37,3 +37,20 @@ This started a Bash terminal shell
 ~        home directory
 ~name    home directory of user name
 ```
+
+## Other
+
+echo letters to string words
+
+```
+echo me{ga,dian,an} stats       # mega median mean stats
+```
+
+## list files in directories
+
+folders Hash and DEFCON
+- folderA, folderB = error
+
+```
+ls {Hash,defcon}   
+```
