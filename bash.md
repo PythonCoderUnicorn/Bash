@@ -112,6 +112,43 @@ cmd |& tee file   output in terminal and overwrites to file
 
 
 
+---
+
+# Functions
+
+A shell function is grouping of commands within a shell script.
+
+- command line parameters: $1, $2 ...
+- $0 name of the full script
+
+```
+name () {
+  function code goes here
+} [redirections]
+```
+
+sometimes you need the letters of the alphabet
+```
+alpha () {
+  echo 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' "$@" >&2 
+  exit 1
+}
+if [ $# = 0 ]
+then
+  alpha
+fi
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
