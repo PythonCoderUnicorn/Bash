@@ -139,11 +139,42 @@ then
 fi
 ```
 
+---
+
+## variable assignment
+
+In terminal math of integers (no spaces for math assignment & operation)
+```
+declare -i nums; nums=8+7; echo $nums
+```
+
+storing named variable
+```
+movie=Matrix
+movie+=", The"
+echo $movie
+```
+
+store variables in an array
+```
+linux=(ubuntu arch mint)
+echo ${linux[2]}
+linux+=(kali parrot)
+echo $linux
+```
 
 
 
+## in-shell variables
 
+the $ is not part of the variable
 
+```
+$#    number of command line args
+$0    first word of command name, shows full PATH
+$n    n= 1-9, greater than 9 ${n}
+"$*"  all command line as 1 string
+```
 
 
 
@@ -207,7 +238,7 @@ echo {01..10}
 ## other
 
 - `pr -N` prints out the Nth page, used with `sort file`
-
+- `dirs` prints pwd path
 
 
 
